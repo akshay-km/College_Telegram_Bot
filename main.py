@@ -1,10 +1,10 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from chat_log import chat_log
 
-load_dotenv()
+# load_dotenv()
 TOKEN = os.getenv('TOKEN')
 SECRET = os.getenv('SECRET')
 WEBHOOK_URL = os.getenv('WEBHOOK_URL')
