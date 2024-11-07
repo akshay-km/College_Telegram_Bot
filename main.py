@@ -14,7 +14,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_log(update.effective_user.first_name, update.effective_chat.id)
     text = f"""
         Dear {update.effective_user.first_name},\n
-        Welcome to the official chat assistant of __ABC Engineering College__ , XYZ Town.
+        Welcome to the official chat assistant of ABC Engineering College , XYZ Town.
         \nhttps://www.mgu.ac.in | +91 123456789 | mail@abc_college.in \n\n
         You can chat or use the following commands for interacting with this bot :\n
         /start - Start the bot.\n
