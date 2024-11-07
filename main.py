@@ -7,6 +7,7 @@ from chat_log import chat_log
 load_dotenv()
 TOKEN = os.getenv('TOKEN')
 SECRET = os.getenv('SECRET')
+WEBHOOK_URL = os.getenv('WEBHOOK_URL')
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -181,7 +182,7 @@ bot_app.add_handler(other_message_handler)
 
 print("Starting bot...")
 bot_app.run_webhook(listen='0.0.0.0',
-                    port=1000,
+                    port=10000,
                     secret_token=SECRET,
-                    webhook_url='https://collegedemotelbot.onrender.com:443'
+                    webhook_url=WEBHOOK_URL
                     )
